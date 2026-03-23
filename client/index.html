@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="pt-PT">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1" />
+    <title>Andreia Alves — Manicure & Pedicure Premium em Sintra</title>
+    <meta name="description" content="Andreia Alves — Especialista em manicure e pedicure em Sintra. Serviços premium de verniz gel, gel, nail art e cuidados de mãos e pés com acabamento impecável. Agende já pelo WhatsApp." />
+    <meta name="keywords" content="manicure em Sintra, pedicure em Sintra, unhas em Sintra, nail design Sintra, verniz gel Sintra, serviços manicure pedicure Sintra, Andreia Alves" />
+    <meta name="robots" content="index, follow" />
+    <meta name="author" content="Andreia Alves" />
+    <link rel="canonical" href="https://andreialves.pt" />
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Andreia Alves — Manicure & Pedicure Premium em Sintra" />
+    <meta property="og:description" content="Especialista em manicure e pedicure em Sintra. Serviços premium com acabamento impecável." />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="pt_PT" />
+
+    <!-- Google Fonts — Cormorant Garamond + Raleway -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=Raleway:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+    <!-- Favicon placeholder -->
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+    <script>
+      (() => {
+        const endpoint = "%VITE_ANALYTICS_ENDPOINT%";
+        const websiteId = "%VITE_ANALYTICS_WEBSITE_ID%";
+        if (!endpoint || !websiteId || endpoint.includes("%VITE_") || websiteId.includes("%VITE_")) return;
+        const script = document.createElement("script");
+        script.defer = true;
+        script.src = `${endpoint.replace(/\/$/, "")}/umami`;
+        script.setAttribute("data-website-id", websiteId);
+        document.head.appendChild(script);
+      })();
+    </script>
+  </body>
+</html>
